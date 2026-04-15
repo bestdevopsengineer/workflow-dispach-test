@@ -1,9 +1,9 @@
-name: main
+name: qa
 
 on:
   push:
     branches:
-      - main
+      - qa
   # workflow_dispatch:
   #   inputs:
   #     branch:
