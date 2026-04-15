@@ -1,15 +1,12 @@
 name: dev
 
 on:
-  push:
-    branches:
-      - dev
-  # workflow_dispatch:
-  #   inputs:
-  #     branch:
-  #       description: "Branch to deploy (leave empty to use current branch)"
-  #       required: false
-  #       default: ""
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: "Branch to deploy (leave empty to use current branch)"
+        required: false
+        default: ""
 
 jobs:
   deploy:
